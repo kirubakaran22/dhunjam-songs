@@ -1,0 +1,87 @@
+.main {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  width: 600px;
+  max-width: 85%;
+}
+.header {
+  text-align: center;
+  font-size: 2rem;
+  font-weight: bold;
+  margin: 1.5rem 0;
+}
+.signInForm {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.signInForm input {
+  width: 100%;
+  background-color: var(--screenBg);
+  color: var(--fontColor);
+  font-size: 1rem;
+  outline: none;
+  border: 1px solid white;
+  border-radius: 20px;
+  padding: 0.8rem;
+  margin: 1.5% 0;
+}
+::-ms-reveal {
+  filter: invert(100%);
+}
+::placeholder {
+  color: #ffffff;
+  opacity: 1;
+}
+.signInForm input:focus {
+  border: 2px solid white;
+}
+.signInForm input.error {
+  border: 2px solid red;
+}
+
+.signInForm #signIn {
+  cursor: pointer;
+  background-color: var(--buttonBg);
+  color: var(--fontColor);
+  font-family: inherit;
+  font-size: 1rem;
+  font-weight: bold;
+  width: 100%;
+  border: 1px solid transparent;
+  border-radius: 20px;
+  padding: 0.7rem;
+  margin: 4% 0 1%;
+}
+.signInForm #signIn:hover,
+.signInForm #signIn:active,
+.signInForm #signIn:active {
+  border: 1px solid #f0c3f1;
+}
+.signInForm a {
+  text-decoration: none;
+  color: var(--fontColor);
+  text-align: center;
+  margin: 2% 0 1%;
+  outline: none;
+}
+.signInForm a:hover,
+.signInForm a:focus,
+.signInForm a:active {
+  text-decoration: underline;
+}
+
+@media (max-width: 365px) {
+  .signInHeader {
+    font-size: 28px;
+  }
+  .signInForm input,
+  .signInForm #signIn,
+  .signInForm a {
+    font-size: 14px;
+  }
+}

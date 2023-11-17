@@ -1,0 +1,29 @@
+@font-face {
+  font-family: Poppins;
+  src: url("./assets/fonts/Poppins-Regular.ttf");
+}
+
+:root {
+  --screenBg: #030303;
+  --fontColor: #ffffff;
+  --buttonBg: #6741d9;
+  --graphColor: #f0c3f1;
+  --greyedOut: #c2c2c2;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Poppins;
+}
+body {
+  background-color: var(--screenBg);
+  color: var(--fontColor);
+}
