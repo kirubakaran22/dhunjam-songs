@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
+import { createHashRouter, RouterProvider } from "react-router-dom";
 import { QueryClientProvider } from "@tanstack/react-query";
 
 import LoginPage from "./pages/Login.jsx";
@@ -8,7 +8,7 @@ import { action as signInAction } from "./components/SignIn.jsx";
 import { queryClient } from "./util/util.js";
 import { loader as detailsLoader } from "./components/EditDetails.jsx";
 
-const router = createBrowserRouter([
+const router = createHashRouter([
   {
     path: "/",
     element: <LoginPage />,
