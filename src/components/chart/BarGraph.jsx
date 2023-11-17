@@ -6,10 +6,10 @@ import Bar from "./Bar";
 function Bargraph(props) {
   let barData = [
     { label: "Custom", value: props.graphData?.category_6 },
-    { label: "Category 1", value: props.graphData?.category_7 },
-    { label: "Category 2", value: props.graphData?.category_8 },
-    { label: "Category 3", value: props.graphData?.category_9 },
-    { label: "Category 4", value: props.graphData?.category_10 },
+    { label: "Category1", value: props.graphData?.category_7 },
+    { label: "Category2", value: props.graphData?.category_8 },
+    { label: "Category3", value: props.graphData?.category_9 },
+    { label: "Category4", value: props.graphData?.category_10 },
   ];
 
   const dataPointValues = barData.map((dataPoint) => dataPoint.value);

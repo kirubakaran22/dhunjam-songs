@@ -94,3 +94,17 @@
   left: 0;
   z-index: 10;
 }
+
+@media (max-width: 415px) {
+  .input-group .regular-songs {
+    flex-direction: column;
+    gap: 3px;
+  }
+  .input-group .regular-songs input {
+    width: 100%;
+  }
+  .dashForm #save {
+    position: relative;
+    top: 90px;
+  }
+}

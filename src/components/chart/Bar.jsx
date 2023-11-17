@@ -10,7 +10,7 @@ function Bar(props) {
       <div className="inner">
         <div className="fill" style={{ height: barFillHeight }}></div>
       </div>
-      <div className="label">asdasd</div>
+      <div className="label">{props.label}</div>
     </div>
   );
 }
